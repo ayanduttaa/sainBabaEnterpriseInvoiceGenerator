@@ -9,17 +9,22 @@ doc.addImage(imgData, "JPEG", 0, 0, 210, 297);
 
 function generatePDF() {
 
+const previousFontSize = doc.internal.getFontSize();
 
 const getInvNo = document.getElementById("invNo").value;
 doc.text(getInvNo, 126, 47);
 const getInvDate = document.getElementById("invDate").value;
-doc.text(getInvDate, 126, 52);
+doc.text(getInvDate, 126, 55.6);
 const getCustName = document.getElementById("custName").value;
-doc.text(getCustName, 126, 62);
-const getCustAddr = document.getElementById("custAddr").value;
-doc.text(getCustAddr, 126, 72);
+doc.text(getCustName, 126, 65);
+
+doc.setFontSize(22);
+const getCustAddr = document.getElementById("custAddr").value; //small font-size required
+doc.text(getCustAddr, 126, 73.5);
+doc.setFontSize(previousFontSize);
+
 const getCustGST = document.getElementById("custGST").value;
-doc.text(getCustGST, 126, 82);
+doc.text(getCustGST, 126, 83.5);
 
 
 
@@ -32,16 +37,24 @@ doc.save('table.pdf');
 }
 
 function prevPDF(){
+
+const previousFontSize = doc.internal.getFontSize();
+
+
 const getInvNo = document.getElementById("invNo").value;
-doc.text(getInvNo, 126, 47);
+doc.text(getInvNo, 127, 47);
 const getInvDate = document.getElementById("invDate").value;
-doc.text(getInvDate, 126, 52);
+doc.text(getInvDate, 127, 55.6);
 const getCustName = document.getElementById("custName").value;
-doc.text(getCustName, 126, 62);
-const getCustAddr = document.getElementById("custAddr").value;
-doc.text(getCustAddr, 126, 72);
+doc.text(getCustName, 126, 65);
+
+doc.setFontSize(22);
+const getCustAddr = document.getElementById("custAddr").value; //small font-size required
+doc.text(getCustAddr, 126, 73.5);
+doc.setFontSize(previousFontSize);
+
 const getCustGST = document.getElementById("custGST").value;
-doc.text(getCustGST, 126, 82);
+doc.text(getCustGST, 126, 83.5);
 
 const pdfData = doc.output("datauristring");
 const iframe = document.createElement("iframe");
