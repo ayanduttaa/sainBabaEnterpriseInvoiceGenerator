@@ -48,7 +48,7 @@ doc.text(getInvDate, 127, 55.6);
 const getCustName = document.getElementById("custName").value;
 doc.text(getCustName, 126, 65);
 
-doc.setFontSize(22);
+doc.setFontSize(8);
 const getCustAddr = document.getElementById("custAddr").value; //small font-size required
 doc.text(getCustAddr, 126, 73.5);
 doc.setFontSize(previousFontSize);
