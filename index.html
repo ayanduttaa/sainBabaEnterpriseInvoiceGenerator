@@ -59,7 +59,117 @@
             </div>
         </div>
       </section>
+    
 
+      <section class="goodsDetail">
+        <div class="formHolder">
+            <div class="theForm" style="margin: 20px">
+                <form>
+                    <div class="form-group">
+                      <label for="slNo">Enter Serial Number</label>
+                      <input type="number" class="form-control" id="slNo" placeholder="SL. No" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="gdDes">Description or Goods</label>
+                      <input type="text" class="form-control" id="gdDes" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="gdHSN">Enter HSN Code</label>
+                        <input type="number" class="form-control" id="gdHSN" required>
+                      </div>
+                      <div class="form-group">
+                        <label for="gdQuant">Enter Quantity</label>
+                        <input type="text" class="form-control" id="gdQuant" required>
+                      </div>
+                      <div class="form-group">
+                        <label for="gdUnit">Enter Unit</label>
+                        <input type="text" class="form-control" id="gdUnit" required>
+                      </div>
+                      <div class="form-group">
+                        <label for="gdRate">Enter Rate</label>
+                        <input type="text" class="form-control" id="gdRate" required>
+                      </div>
+                      <div class="form-group">
+                        <label for="gdValue">Enter Value</label>
+                        <input type="text" class="form-control" id="gdValue" required>
+                      </div>
+                      <div class="form-group">
+                        <label for="gdWord">Enter Amount in Words</label>
+                        <input type="text" class="form-control" id="gdWord" required>
+                      </div>
+                      <div class="form-group">
+                        <label for="gdTruck">Enter Truck Number</label>
+                        <input type="text" class="form-control" id="gdTruck" required>
+                      </div>
+                      <div class="form-group">
+                        <label for="gdTrans">Enter Transport Medium</label>
+                        <input type="text" class="form-control" id="gdTrans" required>
+                      </div>        
+                  </form>
+            </div>
+        </div>
+      </section>
+
+
+      <section class="bankDetail">
+        <div class="formHolder">
+            <div class="theForm" style="margin: 20px">
+                <form>
+                    <div class="form-group">
+                      <label for="bankName">Enter Bank Name</label>
+                      <input type="text" class="form-control" id="bankName" placeholder="eg. Bandhan, SBI" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="bankAcc">Enter Account Number</label>
+                      <input type="text" class="form-control" id="bankAcc" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="bankIFSC">Enter IFSC Code</label>
+                        <input type="text" class="form-control" id="bankIFSC" required>
+                      </div>
+                      <div class="form-group">
+                        <label for="bankBranch">Enter Branch Name</label>
+                        <input type="text" class="form-control" id="bankBranch" required>
+                      </div>        
+                  </form>
+            </div>
+        </div>
+      </section>
+
+      
+      <section class="amtDetail">
+        <div class="formHolder">
+            <div class="theForm" style="margin: 20px">
+                <form>
+                    <div class="form-group">
+                      <label for="amtSGST">SGST @2.5%</label>
+                      <input type="text" class="form-control" id="amtSGST" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="amtCGST">CGST @2.5%</label>
+                      <input type="text" class="form-control" id="amtCGST" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="amtIGST">IGST @5%</label>
+                        <input type="text" class="form-control" id="amtIGST" required>
+                      </div>
+                      <div class="form-group">
+                        <label for="amtTotal">Enter Total Amount</label>
+                        <input type="text" class="form-control" id="amtTotal" required>
+                      </div>        
+                  </form>
+            </div>
+        </div>
+      </section>
+
+      <section class="amtDetail">
+        <div class="buttonHolder">
+            <div>
+                <button type="submit" class="btn btn-primary" onclick="generatePDF()">Generate PDF</button>
+                <button type="submit" class="btn btn-primary" onclick="prevPDF()">Preview PDF</button>
+            </div>
+        </div>
+      </section>
 
      <!-- <form>
         <label for="inv_no">Enter Invoice Number</label><br>

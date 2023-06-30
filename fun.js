@@ -27,6 +27,49 @@ const getCustGST = document.getElementById("custGST").value;
 doc.text(getCustGST, 126, 83.5);
 
 
+//FORM 2
+const getSL = document.getElementById("slNo").value;
+doc.text(getSL, 126, 83.5);
+const getDs = document.getElementById("gdHSN").value;
+doc.text(getDs, 126, 83.5);
+const getHSN = document.getElementById("gdDes").value;
+doc.text(getHSN, 126, 83.5);
+const getQuant = document.getElementById("gdQuant").value;
+doc.text(getQuant, 126, 83.5);
+const getUnit = document.getElementById("gdUnit").value;
+doc.text(getUnit, 126, 83.5);
+const getRate = document.getElementById("gdRate").value;
+doc.text(getRate, 126, 83.5);
+const getValue = document.getElementById("gdValue").value;
+doc.text(getValue, 126, 83.5);
+const getWord = document.getElementById("gdWord").value;
+doc.text(getWord, 126, 83.5);
+const getTruck = document.getElementById("gdTruck").value;
+doc.text(getTruck, 126, 83.5);
+const getTrans = document.getElementById("gdTrans").value;
+doc.text(getTrans, 126, 83.5);
+
+//FORM 3
+const getBank = document.getElementById("bankName").value;
+doc.text(getBank, 126, 83.5);
+const getAcc = document.getElementById("bankAcc").value;
+doc.text(getAcc, 126, 83.5);
+const getIFSC = document.getElementById("bankIFSC").value;
+doc.text(getIFSC, 126, 83.5);
+const getBranch = document.getElementById("bankBranch").value;
+doc.text(getBranch, 126, 83.5);
+
+//FORM 4
+const getSGST = document.getElementById("amtSGST").value;
+doc.text(getSGST, 126, 83.5);
+const getCGST = document.getElementById("amtCGST").value;
+doc.text(getCGST, 126, 83.5);
+const getIGST = document.getElementById("amtIGST").value;
+doc.text(getIGST, 126, 83.5);
+const getTOTAL = document.getElementById("amtTotal").value;
+doc.text(getTOTAL, 126, 83.5);
+
+
 
 
 
